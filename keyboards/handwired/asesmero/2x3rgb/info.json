@@ -17,7 +17,8 @@
         "console": false,
         "extrakey": true,
         "mousekey": true,
-        "nkro": false
+        "nkro": false,
+		"rgblight": true
     },
 	
 	"matrix_pins": {
@@ -26,7 +27,12 @@
     },
 	
     "diode_direction": "ROW2COL",
-
+	
+	"rgblight": {	 
+         "led_count": 8,
+         "pin": "F7"
+    },
+    
     "community_layouts": [ "ortho_2x3" ]
 	
     "layouts": {
@@ -42,4 +48,7 @@
             ]
         }
     }
+	
 }
+
+
