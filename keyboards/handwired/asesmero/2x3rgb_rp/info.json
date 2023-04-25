@@ -1,0 +1,60 @@
+{
+    "manufacturer": "asesmero",
+    "keyboard_name": "2x3 RP2040",
+    "maintainer": "asesmero",
+	"url": "https://github.com/asesmero"
+    "platform_key": "chibios",
+    "processor": "RP2040",
+    "processor_type": "arm",
+    "protocol": "ChibiOS",
+	"bootloader": "rp2040",
+	
+    "usb": {
+        "device_version": "0.0.1",
+        "pid": "0x0023",
+        "vid": "0x0282"
+    },
+	
+	"features": {
+        "bootmagic": true,
+        "command": false,
+        "console": false,
+        "extrakey": true,
+        "mousekey": true,
+        "nkro": false,
+		"rgblight":true
+    },
+	
+    "matrix_pins": {
+        "cols": ["GP2", "GP3", "GP4"],
+        "rows": ["GP8", "GP9"]
+    },
+	
+    "diode_direction": "ROW2COL",
+	
+    "rgblight": {
+		"layers": {
+           "enabled": true
+		},
+		
+        "led_count": 7,
+        "pin": "GP29"
+    },
+    
+
+    "community_layouts": [ "ortho_2x3" ]
+	
+    "layouts": {
+        "LAYOUT_ortho_2x3": {
+            "layout": [
+                { "label": "K00", "matrix": [0, 0], "w": 1, "x": 0, "y": 0 },
+                { "label": "K01", "matrix": [0, 1], "w": 1, "x": 1, "y": 0 },
+                { "label": "K02", "matrix": [0, 2], "w": 1, "x": 2, "y": 0 },
+                { "label": "K10", "matrix": [1, 0], "w": 1, "x": 0, "y": 1 },
+                { "label": "K11", "matrix": [1, 1], "w": 1, "x": 1, "y": 1 },
+                { "label": "K12", "matrix": [1, 2], "w": 1, "x": 2, "y": 1 }
+
+            ]
+        }
+    }
+}
