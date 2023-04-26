@@ -50,26 +50,26 @@ enum {
 
 void keyboard_post_init_user(void) {
     rgblight_enable_noeeprom();
-    rgblight_sethsv_noeeprom(HSV_BLUE);
+    rgblight_sethsv_noeeprom(HSV_RED);
 };
 	
 layer_state_t layer_state_set_user(layer_state_t state) {
     
 	switch (get_highest_layer(state)) {
     case LAYER_0:
-        rgblight_sethsv_noeeprom(HSV_BLUE);
+        rgblight_sethsv_noeeprom(HSV_RED);
         break;
     case LAYER_1:
         rgblight_sethsv_noeeprom(HSV_GREEN);
         break;
     case LAYER_2:
-        rgblight_sethsv_noeeprom(HSV_RED);
+        rgblight_sethsv_noeeprom(HSV_BLUE);
         break;
     case LAYER_3:
         rgblight_sethsv_noeeprom(HSV_PURPLE);
         break;
     default:
-        rgblight_sethsv_noeeprom(HSV_ORANGE);
+        rgblight_sethsv_noeeprom(HSV_BLACK);
         break;
     }
   return state;
