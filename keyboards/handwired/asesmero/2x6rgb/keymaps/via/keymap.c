@@ -21,7 +21,7 @@ enum {
     LAYER_0,
 	LAYER_1,
 	LAYER_2,
-	LAYER_3,
+	LAYER_3
 };
 
  const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
@@ -73,4 +73,4 @@ layer_state_t layer_state_set_user(layer_state_t state) {
         break;
     }
   return state;
-}
+};
