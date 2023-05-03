@@ -16,34 +16,36 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
 #include QMK_KEYBOARD_H
+#define UNICODE_SELECTED_MODES UNICODE_MODE_WINCOMPOSE
+#define UNICODE_KEY_WINC
 
-enum layer_names {
+enum {
     LAYER_0,
 	LAYER_1,
 	LAYER_2,
 	LAYER_3,
-	};
+};
 
  const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
-	[LAYER_0] = LAYOUT_ortho_2x3(
-		KC_A, KC_B, KC_C, 
-		KC_D, KC_E, TO(1)
+	[LAYER_0] = LAYOUT_ortho_2x6(
+		MEH(KC_A), MEH(KC_B), MEH(KC_C), MEH(KC_D), MEH(KC_E), MEH(KC_F), 
+		LSG(KC_G), MEH(KC_H), MEH(KC_I), MEH(KC_J), MEH(KC_K), TO(1)
+	),
+
+	[LAYER_1] = LAYOUT_ortho_2x6(
+		KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, 
+		KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, TO(2)
 	), 
-		
-	[LAYER_1] = LAYOUT_ortho_2x3(
-		KC_F, KC_G, KC_H, 
-		KC_I, KC_J, TO(2)
-	), 
+
+	[LAYER_2] = LAYOUT_ortho_2x6(
+		KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,  
+		KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, TO(3)
+	), 	
 	
-	[LAYER_2] = LAYOUT_ortho_2x3(
-		KC_K, KC_L, KC_M, 
-		KC_A, KC_B, TO(3)
-	), 
-	
-	[LAYER_3] = LAYOUT_ortho_2x3(
-		KC_N, KC_O, KC_P, 
-		KC_Q, KC_R, TO(0)
+	[LAYER_3] = LAYOUT_ortho_2x6(
+		KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,  
+		KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, TO(0)
 	) 
 	
 };
@@ -69,7 +71,7 @@ layer_state_t layer_state_set_user(layer_state_t state) {
         rgblight_sethsv_noeeprom(HSV_PURPLE);
         break;
     default:
-        rgblight_sethsv_noeeprom(HSV_ORANGE);
+        rgblight_sethsv_noeeprom(HSV_BLACK);
         break;
     }
   return state;
