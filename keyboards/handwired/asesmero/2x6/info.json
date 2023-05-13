@@ -4,8 +4,8 @@
 	"url": "https://github.com/asesmero"
 	
     "usb": {
-        "pid": "0x0026",
-        "vid": "0x0282"
+        "pid": "0x0206",
+        "vid": "0x5A30"
     },
 	
 	"features": {
