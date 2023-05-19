@@ -1,0 +1,20 @@
+{
+    "keyboard_name": "3x3 promicro",
+    "development_board": "promicro",
+	
+    "usb": {
+        "device_version": "0.0.1",
+    },
+	
+
+    "matrix_pins": {
+        "cols": ["D1", "D0", "D4"],
+        "rows": ["B4", "B5", "B6"]
+    },
+
+    "rgblight": {
+        "led_count": 1,
+        "pin": "F7"
+    },
+	
+}

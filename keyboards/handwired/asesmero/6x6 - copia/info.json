@@ -1,18 +1,11 @@
 {
     "manufacturer": "asesmero",
-    "keyboard_name": "6x6 RP2040",
     "maintainer": "asesmero",
 	"url": "https://github.com/asesmero"
-    "platform_key": "chibios",
-    "processor": "RP2040",
-    "processor_type": "arm",
-    "protocol": "ChibiOS",
-	"bootloader": "rp2040",
 	
     "usb": {
-        "device_version": "0.0.1",
-        "pid": "0x0066",
-        "vid": "0x0282"
+        "pid": "0x0606",
+        "vid": "0x5A30"
     },
 	
 	"features": {
@@ -22,20 +15,10 @@
         "extrakey": true,
         "mousekey": true,
         "nkro": false,
-		"rgblight":true
+		"rgblight": true
     },
-	
-    "matrix_pins": {
-        "cols": ["GP2", "GP3", "GP4", "GP5", "GP6", "GP7"],
-        "rows": ["GP8", "GP9", "GP10", "GP11", "GP12", "GP13"]
-    },
-	
+		
     "diode_direction": "ROW2COL",
-	
-    "rgblight": {
-        "led_count": 7,
-        "pin": "GP29"
-    },
 	
     "layouts": {
         "LAYOUT_ortho_6x6": {

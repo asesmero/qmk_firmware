@@ -1,0 +1,20 @@
+{
+    "keyboard_name": "3x3 RP2040",
+    "processor": "RP2040",
+	"bootloader": "rp2040",
+	
+    "usb": {
+        "device_version": "0.0.2",
+    },
+	
+    "matrix_pins": {
+        "cols": ["GP2", "GP3", "GP4" ],
+        "rows": ["GP8", "GP9", "GP10"]
+    },	
+	
+    "rgblight": {
+        "led_count": 1,
+        "pin": "GP29"
+    },
+	
+}

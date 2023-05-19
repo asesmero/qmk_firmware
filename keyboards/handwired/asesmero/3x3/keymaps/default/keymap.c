@@ -19,7 +19,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 enum layer_names {
     LAYER_0,
-	};
+};
 
  const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
@@ -30,11 +30,5 @@ enum layer_names {
 		MEH(KC_S), MEH(KC_T), MEH(KC_U), MEH(KC_V), MEH(KC_W), MEH(KC_X), 
 		MEH(KC_Y), MEH(KC_Z), MEH(KC_1), MEH(KC_2), MEH(KC_3), MEH(KC_4), 
 		MEH(KC_5), MEH(KC_6), MEH(KC_7), MEH(KC_8), MEH(KC_9), MEH(KC_0)
-	) 
+	)
 };
-	
-void keyboard_post_init_user(void) {
-	rgblight_enable_noeeprom();
-	rgblight_sethsv_noeeprom(HSV_PURPLE);
-};
-
