@@ -1,1 +1,0 @@
-DEFAULT_FOLDER = handwired/asesmero/6x6/promicro

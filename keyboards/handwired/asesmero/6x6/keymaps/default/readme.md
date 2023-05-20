@@ -1,4 +1,4 @@
-# Default Asesmero 6x6 Layout
+# Default ortho 6x6 Layout
 
 A simple layout with 36 keys with shorcuts to assign on OBS or any software
 

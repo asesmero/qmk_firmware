@@ -27,9 +27,9 @@ enum layer_names {
  const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 	[LAYER_0] = LAYOUT_ortho_6x6(
-		MEH(KC_S), MEH(KC_T), MEH(KC_U),
-		MEH(KC_Y), MEH(KC_Z), MEH(KC_1), 
-		MEH(KC_5), MEH(KC_6), TO(1)
+		MEH(KC_A), MEH(KC_B), MEH(KC_C), 
+		MEH(KC_D), MEH(KC_E), MEH(KC_F), 
+		MEH(KC_G), MEH(KC_H), TO(1)
 	),
 
 	[LAYER_1] = LAYOUT_ortho_6x6(
