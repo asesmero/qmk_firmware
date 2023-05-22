@@ -1,8 +1,10 @@
 #  Ortho 6x6 Layout VIA Enabled
 
 A simple layout with 36 keys with shorcuts to assign on OBS or any software
-VIA config enabled.
+You can connect a Neopixel (RGB Led) on ProMicro PIN F7 or RP2040 PIN GP29  
+to see wich layer is active.
 
+```
 LAYER 0 (RED)
 +------------+------------+------------+------------+------------+------------+
 |    Ctrl    |    Ctrl    |    Ctrl    |    Ctrl    |    Ctrl    |    Ctrl    |
@@ -113,4 +115,4 @@ LAYER 3 (PURPLE)
 |TRANSPARENT |TRANSPARENT |TRANSPARENT |TRANSPARENT |TRANSPARENT |   LAYER    |
 |            |            |            |            |            |  0 (RED)   |
 +------------+------------+------------+------------+------------+------------+
-
+```
