@@ -1,5 +1,5 @@
 {
-    "keyboard_name": "3x6 promicro",
+    "keyboard_name": "3x6 encoder promicro",
     "development_board": "promicro",
 
     "usb": {
@@ -20,4 +20,10 @@
         "pin": "F7"
     }
 
+    "encoder": {
+        "rotary": [
+            {"pin_a": "B2", "pin_b": "B3"}
+        ]
+    },
 }
+

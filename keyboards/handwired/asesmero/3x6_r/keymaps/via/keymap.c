@@ -51,6 +51,14 @@ enum layer_names {
      )
 };
 
+
+const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][NUM_DIRECTIONS] = {
+    [LAYER_0] = { ENCODER_CCW_CW(KC_VOLD, KC_VOLU)},
+    [LAYER_1] = { ENCODER_CCW_CW(KC_TRNS, KC_TRNS)},
+    [LAYER_2] = { ENCODER_CCW_CW(KC_TRNS, KC_TRNS)},
+    [LAYER_3] = { ENCODER_CCW_CW(KC_TRNS, KC_TRNS)},
+};
+
 void keyboard_post_init_user(void) {
     rgblight_enable_noeeprom();
     rgblight_sethsv_noeeprom(HSV_RED);
